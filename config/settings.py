@@ -85,6 +85,7 @@ EMAIL_PORT = int(config("EMAIL_PORT", default="587") or 587)
 EMAIL_HOST_USER = config("EMAIL_HOST_USER", default="")
 EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD", default="")
 EMAIL_USE_TLS = config("EMAIL_USE_TLS", default=True, cast=bool)
+EMAIL_TIMEOUT = int(config("EMAIL_TIMEOUT", default="10") or 10)
 DEFAULT_FROM_EMAIL = config("DEFAULT_FROM_EMAIL", default="") or "noreply@localhost"
 
 # Media files
